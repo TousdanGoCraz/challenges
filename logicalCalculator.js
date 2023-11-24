@@ -5,7 +5,7 @@
 //    booleans = [True, True, False], operator = "AND"
 
 //     True AND True -> True
-//     True AND False -> False
+// //    True AND False -> False
 //     return False
 
 //     booleans = [True, True, False], operator = "OR"
@@ -28,6 +28,8 @@
 // Output
 
 // A Boolean value (True or False).
+
+
 
 function logicalCalc(array, op){
   //P an array of bools, op of AND, OR
