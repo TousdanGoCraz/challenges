@@ -1,5 +1,5 @@
 function countUniqueValues(arr){
-    return arr.filter((x,i) => arr.indexOf(x) == arr.lastIndexOf(x))
+    return [...new Set(arr)].length
 }
 
 
