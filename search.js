@@ -1,12 +1,23 @@
-// Input: A sequence of n numbers A D ha1 ; a2 ; : : : ; an i and a value .
-// Output: An index i such that  D AŒi or the special value NIL if  does not
-// appear in A.
+function search(arr,val){
+    let min = 0
+    let max = arr.length - 1
 
-function searchLinear(arr,v){
-
-    for (let i = 0 ;i < arr.length;i++){
-        if(arr[i] == v) return arr[i]
-        else return null
+    while (min <= max){
+        let middle = Math.floor((min + max) / 2)
+        let currentElement = arr[middle]
+        if (val > arr[middle]){
+            min = middle + 1
+        }
+        else if (val < arr[middle]){
+            max = middle - 1
+        }
+        else {
+            return middle
+        }
     }
-
+    return - 1  
 }
+
+console.log(search([1,2,3,4,5,6],4)) // 3
+search([1,2,3,4,5,6],6) // 5
+search([1,2,3,4,5,6],11)
