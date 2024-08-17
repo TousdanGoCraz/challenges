@@ -40,3 +40,21 @@ function factorial(n){
  }
 
 
+//Return the number (count) of vowels in the given string.
+//We will consider a, e, i, o, u as vowels for this Kata (but not y).
+//The input string will only consist of lower case letters and/or spaces.
+
+function getCount(str) {
+  let vowels = ['a','e','i','o','u']
+  let sum= 0
+  str.split('').filter(element => {
+    for (let i = 0; i < vowels.length;i++){
+      if (element == vowels[i]){
+        sum+= 1
+      }else {
+        null
+      }
+    }
+  })
+  return sum
+}
