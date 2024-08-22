@@ -91,3 +91,10 @@ const binaryArrayToNumber = arr => {
 function getEvenNumbers(numbersArray){
   return numbersArray.filter(c => c % 2 == 0)
 }
+
+//Given an array of numbers, return a new array of length number containing the last even numbers from the original array (in the same order). The original array will be not empty and will contain at least "number" even numbers.
+
+
+function evenNumbers(array, number) {
+  return array.filter(num => num % 2 == 0).reverse().slice(0,number).reverse()
+}
