@@ -98,3 +98,9 @@ function getEvenNumbers(numbersArray){
 function evenNumbers(array, number) {
   return array.filter(num => num % 2 == 0).reverse().slice(0,number).reverse()
 }
+
+//Write a small function that returns the values of an array that are not odd. 
+
+function noOdds( values ){
+  return values.filter(el => el % 2 == 0)
+}
