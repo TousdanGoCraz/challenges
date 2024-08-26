@@ -104,3 +104,11 @@ function evenNumbers(array, number) {
 function noOdds( values ){
   return values.filter(el => el % 2 == 0)
 }
+
+
+//write a simple helper function to capitalize a string (that contains a single word) 
+//Fix the helper function they wrote so that it works as intended (i.e. it must make the first character in the string upper case).
+
+function capitalizeWord(word) {
+  return word[0].toUpperCase() + word.slice(1);
+}
