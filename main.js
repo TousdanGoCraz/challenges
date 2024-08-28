@@ -139,6 +139,16 @@ function stairsIn20(s){
     out += day.reduce((sum,cur) => sum + cur * 20,0)
   }
   return out
+}	
+
+//Given an array of integers , Find the maximum product obtained from multiplying 2 adjacent numbers in the array.
+
+function adjacentElementsProduct(array) {
+  let newArr = []
+  for(i=0; i < array.length-1; i++){
+    newArr.push(array[i]*array[i+1])
+  }  
+  return Math.max(...newArr)
 }
 
 
