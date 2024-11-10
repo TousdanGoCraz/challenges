@@ -38,10 +38,10 @@
 
 
 
-function merge(left,right){
+function mergeDesc(left,right){
     let sortedArr = []
     while(left.length && right.length){
-        if(left[0] < right[0]){
+        if(left[0] > right[0]){
             sortedArr.push(left.shift())
         }else {
             sortedArr.push(right.shift())
@@ -57,7 +57,7 @@ function mergeSort(arr){
     let left = mergeSort(arr.slice(0,midpoint))
     let right = mergeSort(arr.slice(midpoint))
 
-    return merge(left,right)
+    return mergeDesc(left,right)
 }
 
 
