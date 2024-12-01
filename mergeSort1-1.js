@@ -7,7 +7,7 @@ function merge(left,right){
             sortedArr.push(right.shift())
         }
     }
-    return [...sortedArr,...left ,...right]
+    return [...sortedArr, ...left , ...right]
 }
 
 function mergeSort(arr){
