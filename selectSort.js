@@ -11,7 +11,7 @@ function selectSort(arr){
 
         for(let j = i + 1; j < arr.length;j++){
             if(arr[minIndex] > arr[j]){
-                minIndex = j
+                minIndex = j    
             } 
         }
 
